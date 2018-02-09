@@ -4,6 +4,10 @@
 */
 function Mostar()
 {
-	
+	var nombre;
+
+	nombre = prompt("¿Cual es tu nonbre?","Juan");
+
+	document.getElementById('elNombre').value= nombre;
 }
 
