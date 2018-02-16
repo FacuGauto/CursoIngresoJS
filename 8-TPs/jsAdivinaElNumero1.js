@@ -15,12 +15,28 @@ function comenzar()
 	//Genero el número RANDOM entre 1 y 100
 	 
 		//alert(numeroSecreto );
-	
-
+	numeroSecreto = Math.floor((Math.random() * 100) + 1);
+	console.log(numeroSecreto);
+	alert("Numero generado...");
 }
 
 function verificar()
 {
-	
+	numeroIngresado = document.getElementById('numero').value;
+
+	numeroIngresado = parseInt(numeroIngresado);
+
+	if (numeroIngresado == numeroSecreto) 
+	{
+		alert("Usted es ganador");
+	}
+	else if (numeroIngresado < numeroSecreto)
+	{
+		alert("Falta para llegar");
+	}
+	else
+	{
+		alert("Se paso!!");
+	}
 	
 }
