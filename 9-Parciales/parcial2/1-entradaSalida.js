@@ -3,5 +3,16 @@ function Mostrar()
 {
 	alert("Funciona 1-EntradaSalida");
 	
+	var base;
+
+	var perimetro;
+
+	base = document.getElementById('lado').value;
+
+	perimetro = base * 3;
+
+	alert(perimetro);
+
+
 }
 
