@@ -12,13 +12,29 @@ function Rectangulo ()
 	largo = parseInt(document.getElementById('Largo').value);
 	ancho = parseInt(document.getElementById('Ancho').value);
 
-	resultado = (largo * 2) + (ancho * 2);
+	resultado = ((largo * 2) + (ancho * 2))*3;
+	alert("Cantidad de almabre a comprar: " + resultado);
 }
 function Circulo () 
 {
-	
+	radio = parseInt(document.getElementById('Radio').value);
+	resultado = (2 * 3.14 * radio)*3;
+	alert("Cantidad de alambre a comprar: " + resultado);
 }
 function Materiales () 
 {
+	var area;
+	var bolsasDeCemento;
+	var bolsasDeCal;
+
+	largo = parseInt(document.getElementById('Largo').value);
+	ancho = parseInt(document.getElementById('Ancho').value);
+
+	area = largo * ancho;
+
+	bolsasDeCemento = area * 2;
+	bolsasDeCal = area * 3;
+
+	alert("Se necesitan " + bolsasDeCemento + " bolsas de cemento y " + bolsasDeCal + " bolsas de cal.");
 	
 }
