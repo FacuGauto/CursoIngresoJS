@@ -6,6 +6,7 @@ function Mostrar()
 	var mes;
 
 	mes = prompt("Ingrese un mes del año: ");
+	mes = mes.tolowercase();
 
 	switch(mes)
 	{
